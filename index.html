@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>FlightPool</title>
 </head>
+
 <body>
     <header class="header-main">
         <nav class="nav">
@@ -30,39 +33,80 @@
                 <input type="text" class="booking__input" placeholder="Откуда">
                 <div></div>
                 <input type="text" class="booking__input" placeholder="Куда">
-  `         </div>
-            <div class="booking-item">
-                <input type="text" class="booking__input" placeholder="Туда" onfocus="(this.type='date')"  onblur="(this.type='text')">
-                <div></div>
-                <input type="text" class="booking__input" placeholder="Обратно" onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
             <div class="booking-item">
-                <input type="number" class="booking__input input-number" placeholder="Колличество пассажиров"> 
+                <input type="text" class="booking__input" placeholder="Туда" onfocus="(this.type='date')"
+                    onblur="(this.type='text')">
+                <div></div>
+                <input type="text" class="booking__input" placeholder="Обратно" onfocus="(this.type='date')"
+                    onblur="(this.type='text')">
+            </div>
+            <div class="booking-item">
+                <input type="number" class="booking__input input-number" placeholder="Колличество пассажиров">
             </div>
             <button class="booking__button btn btn-danger">Поиск</button>
         </div>
     </header>
-   <div class="principles container">
-       <img src="./assets/img/1.webp" alt="" class="principles-item principles-img">
-       <div class="principles-item principles-content">
-           <h3 class="principles__title">Основные принципы сервиса</h3>
-           <p class="principles__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis esse repudiandae porro mollitia ipsam voluptatum amet pariatur. Doloribus porro dignissimos autem, dolores voluptates consequatur doloremque blanditiis similique in ex?</p>
-           <div class="principles-cards">
-               <div class="principles-card">
-                   <p class="principles__number">16.20</p>
-                   <p class="principles__desc">Удобная дата</p>
-               </div>
-               <div class="principles-card">
-                   <p class="principles__number">60%</p>
-                   <p class="principles__desc">Бронирование на рейс</p>
-               </div>
-               <div class="principles-card">
-                   <p class="principles__number">50%</p>
-                   <p class="principles__desc">Снижение стоимости</p>
-               </div>
-           </div>
-       </div>
-   </div>
-    
+    <div class="principles container">
+        <img src="./assets/img/1.webp" alt="" class="principles-item principles-img">
+        <div class="principles-item principles-content">
+            <h3 class="principles__title">Основные принципы сервиса</h3>
+            <p class="principles__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                perspiciatis esse repudiandae porro mollitia ipsam voluptatum amet pariatur. Doloribus porro dignissimos
+                autem, dolores voluptates consequatur doloremque blanditiis similique in ex?</p>
+            <div class="principles-cards">
+                <div class="principles-card">
+                    <p class="principles__number">16.20</p>
+                    <p class="principles__desc">Удобная дата</p>
+                </div>
+                <div class="principles-card">
+                    <p class="principles__number">60%</p>
+                    <p class="principles__desc">Бронирование на рейс</p>
+                </div>
+                <div class="principles-card">
+                    <p class="principles__number">50%</p>
+                    <p class="principles__desc">Снижение стоимости</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trust ">
+        <div class="container trust-inner">
+            <h3 class="trust__title">
+                Нам доверяют множество людей
+            </h3>
+            <p class="trust__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed possimus
+                dolorum totam, doloremque nobis necessitatibus minima itaque aliquam libero placeat adipisci distinctio
+                quos. Pariatur est quia doloremque </p>
+        </div>
+    </div>
+    <div class="stocks container">
+        <h3 class="stocks__title">Высокотехнологичная концепция общественного уклада</h3>
+        <div class="stocks-cards">
+            <div class="stocks-card">
+                <div class="stock-titile_bg">
+                    <h4 class="stoksC__title">Возврат и обмен Ваших билетов</h4>
+                </div>
+                <div class="stoksC__text">Пандемия поменяла планы многих путешественников, но мы знаем, что это не будет длиться вечно</div>
+                <button class="stoksC__button btn btn-danger">Посмотреть</button>
+            </div>
+            <div class="stocks-card">
+                <div class="stock-titile_bg">
+                    <h4 class="stoksC__title">Лучшие предложения</h4>
+                </div>
+                <div class="stoksC__text">С начала января мы увеличиваем количество отправлений, чтобы Вы могли видеться со своими родными намного чаще. Выбирайте нашу компанию, чтобы отправляться туда, где Вас всегда ждут.</div>
+                <button class="stoksC__button btn btn-danger">Посмотреть</button>
+            </div>
+            <div class="stocks-card">
+                <div class="stock-titile_bg">
+                    <h4 class="stoksC__title"> Мы снова в строю</h4>
+                </div>
+                <div class="stoksC__text">С 10 декабря мы возобновим рейсы по большей части путей следования. Совсем скоро жизнь снова пойдет своим чередом!</div>
+                <button class="stoksC__button btn btn-danger">Посмотреть</button>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
