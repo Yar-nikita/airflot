@@ -94,7 +94,6 @@ a{
     position: absolute;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452);
     width: min-content;
-    /* transform: translateY(100%); */
     left: 0;
     right: 0;
     top: 60%;
@@ -247,7 +246,7 @@ a{
 }
 
 .stocks{
-    height: 700px;
+    height: 550px;
 }
 
 .stocks__title{
@@ -258,6 +257,7 @@ a{
 .stocks-cards{
     display: flex; 
     justify-content: space-around;
+    align-items: center;
     margin: 60px 0;
 }
 
@@ -265,26 +265,29 @@ a{
     width: 30%;
     box-shadow: 0 0 15px rgb(158, 157, 157);
     border-radius: 5px;
-    padding: 40px;
     display: flex;
-    position: relative;
+    /* position: relative; */
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    cursor: pointer;
     transition: all 1s;
-    height: 300px;
+    /* overflow: hidden; */
+    min-height: 200px;
 }
 
 
 .stoksC__text{
-    padding: 90px 0;
     text-align: center;
-    height: 200px;
-    opacity: 0;
-    transition: all 1s ;
+    opacity: 1;
+    overflow: hidden;
+    transition:all 1s;
+    max-height: 0px !important;
+    transition-delay: 400ms;
+    transform: translateY(-20px);
 }
 
+.stoksC__text p{
+    margin: 15px;
+}
 .stoksC__title{
     font-size: 18px;
     z-index: 10;
@@ -292,6 +295,7 @@ a{
     padding: 15px 0;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
+    overflow: hidden;
 }
 
 .stoksC__button{
@@ -300,42 +304,46 @@ a{
     position: absolute;
     bottom: 40px;
     z-index: 20;
+    transition: all 1s 0.5s;
+    opacity: 0;
 }
 
 .stock-titile_bg{
-    position: absolute;
     background-image: linear-gradient(45deg, rgba(29, 9, 119, 0.822) 0%, rgba(12, 56, 122, 0.719) 100%), url("./assets/img/promotion1.jpg") !important;
     background-size: cover;
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    position: relative;
     border-radius: 5px;;
     width: 100%;
-    height: 100%;
-    transition: all 1s;
+    height: 250px;
+    transition: all .5s;
 }
 
 .stocks-card:hover .stock-titile_bg{
-   height: 35%;
-}
+   transform: perspective(999px) rotateX(15deg) translate3d(0, -25px,25px);
+ }
+ 
 
 .stocks-card:hover .stoksC__text{
     opacity: 1;
+    max-height: 600px !important;
  }
 
-.stocks-card:hover {
-    height: 450px;
+
+ .stocks-card:hover .stoksC__button{
+    opacity: 1;
  }
-body {
-    perspective: 999px;
-    transform: rotateX(0deg) rotateY(0deg) perspective(999px); 
-    transition: .5s;
+
+.email{
+    background: rgba(150, 116, 206, 0.137);
 }
-body:hover {
-    transform: rotateX(0deg) rotateY(180deg) perspective(999px); 
-}
+ 
+
+
+
 
 
 
